@@ -39,7 +39,7 @@ export const Navbar = () => {
                 </Link>
 
                 {/* LADO DERECHO: Solo se muestra si hay un usuario logueado */}
-                {store.currentUser && (
+                {store.currentUser && typeof store.currentUser === 'object' && currentUser.name && currentUser.slug && (
                     <div className="d-flex align-items-center gap-3">
                         
                         {/* Pantallita de Info */}
