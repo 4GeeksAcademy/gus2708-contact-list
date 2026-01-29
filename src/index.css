@@ -1,0 +1,153 @@
+body {
+    background-color: #e0e0e0;
+}
+
+.layout-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ocupa al menos el 100% de la altura de la pantalla */
+}
+
+/* Contenedor del medio (donde va el Outlet) */
+.layout-content {
+    flex: 1; 
+    padding-bottom: 2rem; /* Un respiro extra al final */
+}
+
+/* efecto hover neumorphic en cards */
+.neumorphic-card {
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow: 0.5625rem 0.5625rem 1rem #bebebe,
+        -0.5625rem -0.5625rem 1rem #ffffff;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.neumorphic-card:hover {
+    box-shadow: inset 10px 10px 20px #bebebe,
+        inset -10px -10px 20px #ffffff;
+}
+
+/* iconos */
+.icon {
+    color: #6c757d;
+}
+
+.icon:hover {
+    color: #f3b519;
+}
+
+.icon:active {
+    color: #ff8800;
+}
+
+/* navbar */
+.neumorphic-nav {
+    background: #e0e0e0;
+}
+
+
+/* botones */
+
+.neumorphic-button {
+    background: #e0e0e0;
+    border: none;
+    border-radius: 0.625rem;
+    /* 10px */
+    padding: 0.625rem 1.25rem;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem #bebebe,
+        -0.3125rem -0.3125rem 0.625rem #ffffff;
+    color: #444;
+    transition: all 0.2s ease;
+}
+
+
+.neumorphic-button:active {
+    box-shadow: inset 0.125rem 0.125rem 0.3125rem #bebebe,
+        inset -0.125rem -0.125rem 0.3125rem #ffffff;
+    transform: scale(0.98);
+}
+
+/* inputs y form de agregar contacto */
+
+.neumorphic-form {
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow: 0.5625rem 0.5625rem 1rem #bebebe,
+        -0.5625rem -0.5625rem 1rem #ffffff;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.neumorphic-input {
+    background: #e0e0e0;
+    border: none;
+    border-radius: 0.625rem;
+    box-shadow: inset 0.3125rem 0.3125rem 0.625rem #bebebe,
+        inset -0.3125rem -0.3125rem 0.625rem #ffffff;
+    padding: 0.75rem 1rem;
+    color: #444;
+}
+
+.neumorphic-input:focus {
+    background: #e0e0e0;
+    outline: none;
+    box-shadow: inset 0.125rem 0.125rem 0.3125rem #bebebe,
+        inset -0.125rem -0.125rem 0.3125rem #ffffff;
+}
+
+/* Botón de eliminar contacto */
+.neumorphic-button-contact {
+    background: #e0e0e0;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    box-shadow: 0.2rem 0.2rem 0.4rem #bebebe, 
+               -0.2rem -0.2rem 0.4rem #ffffff;
+    transition: all 0.2s ease;
+}
+
+.neumorphic-button-delete:active {
+    box-shadow: inset 0.1rem 0.1rem 0.2rem #bebebe, 
+                inset -0.1rem -0.1rem 0.2rem #ffffff;
+}
+
+/* Pantallita para info del usuario */
+.neumorphic-display {
+    background: #e0e0e0;
+    border-radius: 50px;
+    box-shadow: inset 5px 5px 10px #bebebe, 
+                inset -5px -5px 10px #ffffff;
+    padding: 0.5rem 1.5rem;
+    color: #555;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Botón de Salir (rojo suave) */
+.neumorphic-btn-logout {
+    border: none;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 5px 5px 10px #bebebe, 
+               -5px -5px 10px #ffffff;
+    color: #d9534f;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.neumorphic-btn-logout:active {
+    box-shadow: inset 3px 3px 5px #bebebe, 
+                inset -3px -3px 5px #ffffff;
+}
+
+.footer {
+    background-color: #e0e0e0;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+}
